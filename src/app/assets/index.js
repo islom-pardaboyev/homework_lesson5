@@ -4,3 +4,4 @@ export const NavbarItems = [
     {id: 3, title: "Blog", link: "/blog"},
     {id: 4, title: "Contact", link: "/contact"},
 ]
+
