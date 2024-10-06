@@ -7,6 +7,7 @@ import Image from "next/image";
 import { FaAngleRight } from "react-icons/fa6";
 import { usePathname } from "next/navigation";
 import { ClockIcon, LocationIcon, PhoneIcon } from "../../assets/svgs";
+import SectionHeader from "../../../components/SectionHeader";
 
 function Contact() {
   const ViewSection = [
@@ -34,21 +35,7 @@ function Contact() {
 
   return (
     <section className="mt-[85px]">
-      <div className="h-[344px] relative">
-        <Image src={ShopBg} alt="Shop_background" className="w-screen" />
-        <div className="absolute top-1/2 left-1/2 flex flex-col -translate-x-1/2 -translate-y-1/2">
-          <Image className="mx-auto" src={MeubelHouseLogo} />
-          <h1 className="capitalize font-medium text-center text-black text-5xl leading-[72px]">
-            {currentPage.split("/").filter((item) => item).join(" ")}
-          </h1>
-          <p className="flex justify-center items-center gap-[6px]">
-            <span className="font-medium">Home</span> <FaAngleRight />{" "}
-            <span className="capitalize opacity-50">
-              {currentPage.split("/").filter((item) => item).join(" ")}
-            </span>
-          </p>
-        </div>
-      </div>
+      <SectionHeader currentPage={currentPage}/>
       <div className="mt-[98px]">
         <h1 className="text-center font-semibold text-4xl leading-[54px]">
           Get In Touch With Us

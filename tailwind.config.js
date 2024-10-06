@@ -14,7 +14,11 @@ module.exports = {
         primary_dark: '#333333',
         primary_text_color: '#B88E2F',
         secondary: '#F9F1E7',
-        gray: '#9F9F9F'
+        gray: '#9F9F9F',
+        gray_200:"#F4F5F7",
+        gray_300: '#898989',
+        gray_400: '#B0B0B0',
+        red: '#E97171'
       },
       container: {
         center: true,

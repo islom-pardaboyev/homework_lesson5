@@ -1,32 +1,16 @@
 "use client";
 import React from "react";
-import ShopBg from "../../assets/shop-bg.png";
-import MeubelHouseLogo from "../../assets/Meubel House_Logos-05.png";
 import Image from "next/image";
-import { FaAngleRight } from "react-icons/fa6";
 import { usePathname } from "next/navigation";
 import BlogImgOne from "../../assets/blog-img-1.png";
-import { CalendarIcon, PersonIcon, TagIcon } from "../../assets/svgs";
+import { CalendarIcon, PersonIcon, SearchIcon, TagIcon } from "../../assets/svgs";
+import SectionHeader from "../../../components/SectionHeader";
 
 function Blog() {
   const currentPage = usePathname();
   return (
     <section className="mt-[85px]">
-      <div className="h-[344px] relative">
-        <Image src={ShopBg} alt="Shop_background" className="w-screen" />
-        <div className="absolute top-1/2 left-1/2 flex flex-col -translate-x-1/2 -translate-y-1/2">
-          <Image className="mx-auto" src={MeubelHouseLogo} />
-          <h1 className="capitalize font-medium text-center text-black text-5xl leading-[72px]">
-            {currentPage.split("/").filter((item) => item)}
-          </h1>
-          <p className="flex justify-center items-center gap-[6px]">
-            <span className="font-medium">Home</span> <FaAngleRight />{" "}
-            <span className="capitalize opacity-50">
-              {currentPage.split("/").filter((item) => item)}
-            </span>
-          </p>
-        </div>
-      </div>
+      <SectionHeader currentPage={currentPage}/>
       <div className="container mt-[106px]">
         <div className="grid grid-cols-12">
           <div className="col-span-8 flex flex-col gap-[54px]">
@@ -136,7 +120,42 @@ function Blog() {
               </button>
             </div>
           </div>
-          <div className="col-span-4"></div>
+          <div className="col-span-4 px-[41px]">
+            <label className="flex items-center relative">
+            <input type="text" className="w-full border rounded-[10px] border-gray py-[17px] px-[19px]" />
+              <span className="absolute right-[10px] bg-white">
+              <SearchIcon/>
+              </span>
+            </label>
+            <div className="mx-[36px] mb-[76px] mt-[43px]">
+              <h1 className="font-medium mb-[33px] text-[24px]">Category</h1>
+              <div className="flex flex-col gap-[41px]">
+                <div className="flex text-gray items-center justify-between">
+                  <span>Crafts</span>
+                  <span>2</span>
+                </div>
+                <div className="flex text-gray items-center justify-between">
+                  <span>Design</span>
+                  <span>8</span>
+                </div>
+                <div className="flex text-gray items-center justify-between">
+                  <span>Handmade</span>
+                  <span>7</span>
+                </div>
+                <div className="flex text-gray items-center justify-between">
+                  <span>Interior</span>
+                  <span>1</span>
+                </div>
+                <div className="flex text-gray items-center justify-between">
+                  <span>Wood</span>
+                  <span>6</span>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h1>Recent Posts</h1>
+            </div>
+          </div>
         </div>
       </div>
     </section>
