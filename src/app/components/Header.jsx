@@ -6,6 +6,7 @@ import { NavbarItems } from '../../app/assets'
 import Link from 'next/link'
 import { NavbarIsActive, NavbarStyles } from '../../app/utils'
 import { usePathname } from 'next/navigation'
+import { BasketIcon, LikeIcon, ProfileIcon, SearchIcon } from '../assets/svgs'
 function Header() {
     const currentPath = usePathname()
     const NavbarIsActiveFn = (path) => {
@@ -20,6 +21,12 @@ function Header() {
             <nav className='space-x-[75px]'>
                 {NavbarItems.map(item => <Link key={item.id} className={`${NavbarStyles} ${NavbarIsActiveFn(item.link)}`} href={item.link}>{item.title}</Link>)}
             </nav>
+            <div className='flex items-center space-x-[45px]'>
+                <ProfileIcon/>
+                <SearchIcon/>
+                <LikeIcon/>
+                <BasketIcon/>
+            </div>
         </div>
     </header>
   )

@@ -14,10 +14,10 @@ function Footer() {
             <div className="col-span-1 flex flex-col gap-[55px] ">
                 <h1 className='font-medium text-gray'>Links</h1>
                 <nav className='flex flex-col gap-[46px] font-medium'>
-                    <a href="#">Home</a>
-                    <a href="#">Shop</a>
-                    <a href="#">About</a>
-                    <a href="#">Contact</a>
+                    <a href="/">Home</a>
+                    <a href="/shop">Shop</a>
+                    <a href="/blog">Blog</a>
+                    <a href="/contact">Contact</a>
                 </nav>
             </div>
             <div className="col-span-1 flex flex-col gap-[55px] ">

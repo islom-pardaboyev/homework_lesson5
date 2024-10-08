@@ -7,7 +7,7 @@ import OurProducts from '../components/OurProducts'
 
 function Page() {
   return (
-    <section className="w-screen  flex flex-col">
+    <section className="w-screen flex flex-col">
       <div className="relative">
         <Image alt="img" className="w-screen h-screen" src={BgImage} />
         <div className="w-[643px] h-fit absolute top-[28%] left-[50%] bg-primary pt-[62px] pl-[39px] pr-[43px] pb-[37px]">
@@ -30,7 +30,7 @@ function Page() {
         </div>
       </div>
       <Browse/>
-      <OurProducts/>
+      <OurProducts title={'Our Products'}/>
     </section>
   );
 }

@@ -1,6 +1,7 @@
 "use client";
 import { Rate } from "antd";
 import axios from "axios";
+import Zoom from 'react-medium-image-zoom'
 import React, { useEffect, useState } from "react";
 
 function About({ params }) {
@@ -27,7 +28,10 @@ function About({ params }) {
             ))}
           </div>
           <div className="col-span-10 bg-primary w-fit">
-            <img src={singleData[0]?.images[0]} className="h-[500px]" alt="" />
+            <Zoom>
+
+            <img src={singleData[0]?.images[0]} className="h-[500px] w-[600px] object-contain" alt="" />
+            </Zoom>
           </div>
         </div>
         <div className="col-span-6">

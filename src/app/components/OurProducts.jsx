@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 import ProductCard from '../components/ProductCard'
 
 
-function OurProducts() {
+function OurProducts({title}) {
   
 
   const SHOW_MAX_LIMIT = 8;
@@ -23,7 +23,7 @@ function OurProducts() {
 
   return (
     <section className="my-[56px] container">
-      <h1 className="heading mb-[32px]">Our Products</h1>
+      <h1 className="heading mb-[32px]">{title}</h1>
       <div className="grid grid-cols-4 gap-8">
         {products?.map((item) => (
           <ProductCard item={item} key={item.id}/>
