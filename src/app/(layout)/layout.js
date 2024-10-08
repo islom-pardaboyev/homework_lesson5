@@ -1,14 +1,14 @@
-
-import Header from '../../components/Header'
+import Footer from '../components/Footer'
+import Header from '../components/Header'
 import React from 'react'
 
 function Layout({children}) {
   return (
-    <div>
+    <main className='flex flex-col  justify-between'>
         <Header/>
-
         {children}
-    </div>
+        <Footer/>
+    </main>
   )
 }
 

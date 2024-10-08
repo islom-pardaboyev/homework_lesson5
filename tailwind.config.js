@@ -18,7 +18,14 @@ module.exports = {
         gray_200:"#F4F5F7",
         gray_300: '#898989',
         gray_400: '#B0B0B0',
-        red: '#E97171'
+        gray_500: '#D9D9D9',
+        gray_600: '#666666',
+        red: '#E97171',
+        category_pink_color: '#FF0080',
+        category_teal_color: '#387478',
+        category_blue_color: '#006BFF',
+        category_green_color: '#15B392',
+        yellow: '#FFC700'
       },
       container: {
         center: true,

@@ -1,6 +1,6 @@
 import React from 'react'
-import ShopBg from "../app/assets/shop-bg.png";
-import MeubelHouseLogo from "../app/assets/Meubel House_Logos-05.png";
+import ShopBg from "../../app/assets/shop-bg.png";
+import MeubelHouseLogo from "../../app/assets/Meubel House_Logos-05.png";
 import { FaAngleRight } from 'react-icons/fa';
 import Image from 'next/image';
 

@@ -1,13 +1,8 @@
-
 "use client";
 import React from "react";
-import ShopBg from "../../assets/shop-bg.png";
-import MeubelHouseLogo from "../../assets/Meubel House_Logos-05.png";
-import Image from "next/image";
-import { FaAngleRight } from "react-icons/fa6";
 import { usePathname } from "next/navigation";
 import { ClockIcon, LocationIcon, PhoneIcon } from "../../assets/svgs";
-import SectionHeader from "../../../components/SectionHeader";
+import SectionHeader from "../../components/SectionHeader";
 
 function Contact() {
   const ViewSection = [

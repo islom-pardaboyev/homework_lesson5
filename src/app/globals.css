@@ -7,3 +7,18 @@
 body {
   font-family: 'Poppins', sans-serif;
 }
+
+.heading{
+  @apply font-bold text-[32px] text-center leading-[48px]
+}
+
+.categoy_text{
+  @apply text-xs px-2 w-fit rounded-full text-white
+}
+
+.ant-rate-star-full .anticon-star svg{
+  @apply !fill-yellow
+}
+.ant-rate-star-zero .anticon-star svg{
+  @apply !hidden
+}

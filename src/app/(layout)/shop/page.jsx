@@ -1,13 +1,12 @@
 "use client";
 import { usePathname } from "next/navigation";
-import ShopSettings from "../../../components/ShopSettings";
-import SectionHeader from "../../../components/SectionHeader";
+import ShopSettings from "../../components/ShopSettings";
+import SectionHeader from "../../components/SectionHeader";
 import Image from "next/image";
-import Image1 from "../../assets/image1.png";
+import Image1 from "../../assets/blog-img-1.png";
 
 function Shop() {
   const currentPage = usePathname();
-  const MAX_VIEW_PRODUCTS = 8
 
   return (
     <section className="mt-[85px]">

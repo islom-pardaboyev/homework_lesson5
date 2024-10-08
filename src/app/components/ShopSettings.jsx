@@ -1,5 +1,5 @@
 import React from "react";
-import { GridBigRound, SettingsIcon, ViewList } from "../app/assets/svgs";
+import { GridBigRound, SettingsIcon, ViewList } from "../assets/svgs";
 
 export default function ShopSettings() {
   return (

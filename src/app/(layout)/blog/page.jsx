@@ -4,7 +4,7 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import BlogImgOne from "../../assets/blog-img-1.png";
 import { CalendarIcon, PersonIcon, SearchIcon, TagIcon } from "../../assets/svgs";
-import SectionHeader from "../../../components/SectionHeader";
+import SectionHeader from "../../components/SectionHeader";
 
 function Blog() {
   const currentPage = usePathname();
@@ -158,6 +158,7 @@ function Blog() {
           </div>
         </div>
       </div>
+      
     </section>
   );
 }
