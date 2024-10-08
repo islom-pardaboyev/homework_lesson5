@@ -8,7 +8,6 @@ import { toast } from "react-toastify";
 function Sidebar() {
   const { showSidebar, setShowSidebar, savedProducts, setSavedProducts } =
     useContext(Context);
-  console.log(showSidebar);
   return (
     <section
       id="wrapper"

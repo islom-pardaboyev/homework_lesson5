@@ -10,7 +10,6 @@ import Button from "../../components/Button";
 function About({ params }) {
   const [singleData, setSingleData] = useState([]);
   const { savedProducts, setSavedProducts } = useContext(Context);
-  console.log(savedProducts);
   useEffect(() => {
     axios(`https://dummyjson.com/products/${params.id}`).then((res) =>
       setSingleData([res.data])
@@ -65,7 +64,6 @@ function About({ params }) {
                     setSavedProducts((prev) => [...prev, item]);
                     toast.success("Product added to cart");
                   } else {
-                    console.log("this product already exists");
                     toast.error("Product already exists");
                   }
                 }}
