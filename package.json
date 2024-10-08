@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-icons/all-files": "^4.1.0",
     "antd": "^5.21.2",
     "axios": "^1.7.7",
     "next": "14.2.14",
