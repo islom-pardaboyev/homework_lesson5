@@ -9,7 +9,7 @@ import SectionHeader from "../../components/SectionHeader";
 function Blog() {
   const currentPage = usePathname();
   return (
-    <section className="mt-[85px]">
+    <section  className="mt-[85px]">
       <SectionHeader currentPage={currentPage}/>
       <div className="container mt-[106px]">
         <div className="grid grid-cols-12">

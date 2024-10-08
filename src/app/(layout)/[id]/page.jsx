@@ -1,18 +1,21 @@
 "use client";
 import { Rate } from "antd";
 import axios from "axios";
-import Zoom from 'react-medium-image-zoom'
-import React, { useEffect, useState } from "react";
+import Zoom from "react-medium-image-zoom";
+import React, { useContext, useEffect, useState } from "react";
+import { Context } from "../../context/MainContext";
+import { toast } from "react-toastify";
+import Button from "../../components/Button";
 
 function About({ params }) {
   const [singleData, setSingleData] = useState([]);
-
+  const { savedProducts, setSavedProducts } = useContext(Context);
+  console.log(savedProducts);
   useEffect(() => {
     axios(`https://dummyjson.com/products/${params.id}`).then((res) =>
       setSingleData([res.data])
     );
   }, [params.id]);
-  console.log(singleData);
 
   return (
     <section className="my-[105px]">
@@ -29,8 +32,11 @@ function About({ params }) {
           </div>
           <div className="col-span-10 bg-primary w-fit">
             <Zoom>
-
-            <img src={singleData[0]?.images[0]} className="h-[500px] w-[600px] object-contain" alt="" />
+              <img
+                src={singleData[0]?.images[0]}
+                className="h-[500px] w-[600px] object-contain"
+                alt=""
+              />
             </Zoom>
           </div>
         </div>
@@ -44,13 +50,35 @@ function About({ params }) {
               <div className="flex items-center space-x-[22px]">
                 <Rate disabled defaultValue={item.rating} />
                 <span className="w-[2px] h-[30px] bg-gray"></span>
-                <p className="text-[13px] text-gray">{item.reviews.length} Customer Review</p>
+                <p className="text-[13px] text-gray">
+                  {item.reviews.length} Customer Review
+                </p>
               </div>
               <p className="w-[424px] mt-[13px]">{item.description}</p>
+              <div className="mt-[32px]">
+              <Button
+                onClickEvent={() => {
+                  const productExists = savedProducts.some(
+                    (product) => product.id === item.id
+                  );
+                  if (!productExists) {
+                    setSavedProducts((prev) => [...prev, item]);
+                    toast.success("Product added to cart");
+                  } else {
+                    console.log("this product already exists");
+                    toast.error("Product already exists");
+                  }
+                }}
+                styles={"capitalize py-[17px] px-12 border rounded-[15px]"}
+                title={"add to card"}
+              />
+
+              </div>
+
               <span className="w-full h-px block bg-gra mt-[60px] mb-[41px]"></span>
               <div className="flex flex-col space-y-3 text-gray">
                 <p className="capitalize">Category: {item.category}</p>
-                <p className="capitalize">Tags: {item.tags?.join(', ')}</p>
+                <p className="capitalize">Tags: {item.tags?.join(", ")}</p>
               </div>
             </div>
           ))}
