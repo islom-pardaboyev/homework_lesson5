@@ -5,18 +5,19 @@ import { FaAngleRight } from 'react-icons/fa';
 import Image from 'next/image';
 
 function SectionHeader({currentPage}) {
+  
   return (
     <div className="h-[344px] relative">
         <Image src={ShopBg} alt="Shop_background" className="w-screen" />
         <div className="absolute top-1/2 left-1/2 flex flex-col -translate-x-1/2 -translate-y-1/2">
         <Image className="mx-auto" src={MeubelHouseLogo} alt='img'/>
           <h1 className="capitalize font-medium text-black text-5xl leading-[72px]">
-          {currentPage.split("/").filter((item) => item)}
+          {currentPage.split('/')[2]}
           </h1>
           <p className="flex items-center justify-center gap-[6px]">
             <span className="font-medium">Home</span> <FaAngleRight />{" "}
             <span className="capitalize opacity-50">
-              {currentPage.split("/").filter((item) => item)}
+              {currentPage.split('/')[2]}
             </span>
           </p>
         </div>

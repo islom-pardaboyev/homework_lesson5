@@ -11,7 +11,7 @@ import { Link } from "../../navigation";
 import UzbIcon from '../assets/uzbekistan.png'
 import USIcon from '../assets/united-states.png'
 function Header() {
-  const { savedProducts, showSidebar, setShowSidebar, pathname, setPathname } =
+  const { savedProducts, showSidebar, setShowSidebar} =
     useContext(Context);
   const currentPath = usePathname();
   

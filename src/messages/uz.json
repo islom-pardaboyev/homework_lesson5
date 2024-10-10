@@ -1,46 +1,46 @@
 {
   "IndexPage": {
     "header": {
-        "home": "bosh sahifa",
-        "shop": "do'kon",
-        "blog": "blog",
-        "contact": "aloqa"
+        "home": "Bosh sahifa",
+        "shop": "Do'kon",
+        "blog": "Blog",
+        "contact": "Aloqa"
     },
     "home": {
-      "title": "yangi kelgan",
-      "heading": "bizning yangi kolleksiyamiz bilan tanishing",
-      "button_text": "hozir xarid qilish"
+      "title": "Yangi kelgan",
+      "heading": "Bizning yangi kolleksiyamiz bilan tanishing",
+      "button_text": "Hozir xarid qilish"
     },
     "browse": {
-      "title": "diapazonni ko'rib chiqing"
+      "title": "Diapazonni ko'rib chiqing"
     },
     "our_products": {
-      "title": "mahsulotlarimiz",
-      "button_text": "ko'proq ko'ring",
-      "show_more_button_text": "koʻproq koʻrsatish",
-      "show_less_button_text": "kamroq koʻrsatish"
+      "title": "Mahsulotlarimiz",
+      "button_text": "Ko'proq ko'ring",
+      "show_more_button_text": "Koʻproq koʻrsatish",
+      "show_less_button_text": "Kamroq koʻrsatish"
     },
     "footer": {
         "about_text": "400 University Drive Suite 200 Coral Gables, FL 33134 AQSh",
         "links": {
-            "title": "havolalar",
-            "home": "bosh sahifa",
-            "shop": "do'kon",
-            "blog": "blog",
-            "contact": "aloqa"
+            "title": "Havolalar",
+            "home": "Bosh sahifa",
+            "shop": "Do'kon",
+            "blog": "Blog",
+            "contact": "Aloqa"
         },
         "help": {
-            "title": "yordam",
-            "payment_options": "to'lov imkoniyatlari",
-            "returns": "qaytadi",
-            "privacy_policies": "maxfiylik siyosati"
+            "title": "Yordam",
+            "payment_options": "To'lov imkoniyatlari",
+            "returns": "Qaytadi",
+            "privacy_policies": "Maxfiylik siyosati"
         },
         "newsletter": {
             "title":"Yangiliklar",
-            "input_placeholder": "email kiriting","button_text": "obuna bo'lish",
+            "input_placeholder": "Email kiriting",
+            "button_text": "Obuna bo'lish",
             "copyright": "2023 yil furino. Barcha huquqlar himoyalangan"
         }
-        
     }
   }
 }

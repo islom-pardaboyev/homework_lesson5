@@ -72,7 +72,7 @@ function Contact() {
           </label>
           <label className="flex flex-col gap-[22px]">
             <span className="leading-[24px]">Message</span>
-            <textarea type="text" rows={3} className="rounded-[10px] resize-none border py-[25px] px-[31px] outline-none border-gray" placeholder="Hi! i’d like to ask about" />
+            <textarea rows={3} className="rounded-[10px] resize-none border py-[25px] px-[31px] outline-none border-gray" placeholder="Hi! i’d like to ask about" />
           </label>
         </form>
       </div>

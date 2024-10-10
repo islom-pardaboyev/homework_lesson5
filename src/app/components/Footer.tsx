@@ -1,6 +1,7 @@
 import React from 'react'
 import Button from './Button'
 import { useTranslations } from 'next-intl';
+import Link from 'next/link';
 
 function Footer() {
     const t = useTranslations("IndexPage.footer");
@@ -15,10 +16,10 @@ function Footer() {
             <div className="col-span-1 flex flex-col gap-[55px] ">
                 <h1 className='font-medium text-gray capitalize'>{t('links.title')}</h1>
                 <nav className='flex flex-col gap-[46px] font-medium'>
-                    <a href="/" className='capitalize'>{t('links.home')}</a>
-                    <a href="/shop" className='capitalize'>{t('links.shop')}</a>
-                    <a href="/blog" className='capitalize'>{t('links.blog')}</a>
-                    <a href="/contact" className='capitalize'>{t('links.contact')}</a>
+                    <p className='capitalize'>{t('links.home')}</p>
+                    <p className='capitalize'>{t('links.shop')}</p>
+                    <p className='capitalize'>{t('links.blog')}</p>
+                    <p className='capitalize'>{t('links.contact')}</p>
                 </nav>
             </div>
             <div className="col-span-1 capitalize flex flex-col gap-[55px] ">

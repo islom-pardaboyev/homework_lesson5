@@ -19,7 +19,7 @@ function Page() {
           <h1 className="font-bold leading-[65px] text-primary_text_color text-[52px]">
           {t('home.heading')}
           </h1>
-          <p className="text-primary_dark mb-[46px] mt-[17px] leading-[24px] text-lg">
+          <p className="text-primary_dark  mb-[46px] mt-[17px] leading-[24px] text-lg">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
             tellus, luctus nec ullamcorper mattis.
           </p>
