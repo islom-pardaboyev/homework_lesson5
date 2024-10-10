@@ -6,8 +6,7 @@ import { useRouter } from "next/navigation";
 import { Context } from "../context/MainContext";
 import { useTranslations } from "next-intl";
 
-function ProductCard({ item }) {
-  const {pathname} = useContext(Context)
+function ProductCard({ item, currentPath }) {
   const { id, images, discountPercentage, title, category } = item;
   const router = useRouter();
   const categoriesColors = {
@@ -28,7 +27,7 @@ function ProductCard({ item }) {
     >
       <div className="absolute flex items-center justify-center top-[100vw] group-hover:top-0 duration-500 left-0 right-0 bottom-0 z-10 bg-black/50">
         <Button
-          onClickEvent={() => router.push(`uz/${id}` )}
+          onClickEvent={() => router.push(`${currentPath.split('/')[1]}/${id}` )}
           title={t('our_products.button_text')}
           styles={
             "capitalize bg-white py-3 px-[52px] text-primary_text_color font-semibold"

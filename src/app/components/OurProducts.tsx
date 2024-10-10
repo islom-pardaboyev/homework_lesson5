@@ -4,12 +4,13 @@ import React, { useEffect, useState } from "react";
 import Button from "./Button";
 import ProductCard from "./ProductCard";
 import { useTranslations } from "next-intl";
+import { usePathname } from "next/navigation";
 
 type Props = {
   title?: string;
 };
-
 function OurProducts({ title }: Props) {
+  const currentPath = usePathname();
   const SHOW_MAX_LIMIT = 8;
   const [products, setProducts] = useState([]);
   const [showLimit, setShowLimit] = useState(SHOW_MAX_LIMIT);
@@ -27,7 +28,7 @@ function OurProducts({ title }: Props) {
       <h1 className="heading mb-[32px]">{title}</h1>
       <div className="grid grid-cols-4 gap-8">
         {products?.map((item) => (
-          <ProductCard item={item} key={item.id} />
+          <ProductCard currentPath={currentPath} item={item} key={item.id} />
         ))}
       </div>
       <div className="text-center">
