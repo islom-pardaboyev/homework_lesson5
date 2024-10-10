@@ -1,0 +1,46 @@
+{
+  "IndexPage": {
+    "header": {
+        "home": "bosh sahifa",
+        "shop": "do'kon",
+        "blog": "blog",
+        "contact": "aloqa"
+    },
+    "home": {
+      "title": "yangi kelgan",
+      "heading": "bizning yangi kolleksiyamiz bilan tanishing",
+      "button_text": "hozir xarid qilish"
+    },
+    "browse": {
+      "title": "diapazonni ko'rib chiqing"
+    },
+    "our_products": {
+      "title": "mahsulotlarimiz",
+      "button_text": "ko'proq ko'ring",
+      "show_more_button_text": "koʻproq koʻrsatish",
+      "show_less_button_text": "kamroq koʻrsatish"
+    },
+    "footer": {
+        "about_text": "400 University Drive Suite 200 Coral Gables, FL 33134 AQSh",
+        "links": {
+            "title": "havolalar",
+            "home": "bosh sahifa",
+            "shop": "do'kon",
+            "blog": "blog",
+            "contact": "aloqa"
+        },
+        "help": {
+            "title": "yordam",
+            "payment_options": "to'lov imkoniyatlari",
+            "returns": "qaytadi",
+            "privacy_policies": "maxfiylik siyosati"
+        },
+        "newsletter": {
+            "title":"Yangiliklar",
+            "input_placeholder": "email kiriting","button_text": "obuna bo'lish",
+            "copyright": "2023 yil furino. Barcha huquqlar himoyalangan"
+        }
+        
+    }
+  }
+}

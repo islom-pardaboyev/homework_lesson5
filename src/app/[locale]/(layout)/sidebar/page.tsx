@@ -1,7 +1,7 @@
 "use client";
 import React, { useContext } from "react";
-import { Context } from "../../context/MainContext";
-import { CloseSidebarIcon } from "../../assets/svgs";
+import { Context } from "../../../context/MainContext";
+import { CloseSidebarIcon } from "../../../assets/svgs";
 import { FaCircleXmark } from "react-icons/fa6";
 import { toast } from "react-toastify";
 
@@ -11,8 +11,8 @@ function Sidebar() {
   return (
     <section
       id="wrapper"
-      onClick={(e) =>
-        e.target.id === "wrapper" ? setShowSidebar(!showSidebar) : ""
+      onClick={(e: React.MouseEvent<HTMLDivElement>) =>
+        e.target instanceof HTMLDivElement && e.target.id === "wrapper" ? setShowSidebar(!showSidebar) : ""
       }
       className={`fixed top-0 left-0 right-0 bottom-0 bg-black/70 duration-300 z-30 ${
         showSidebar ? "translate-x-0" : "translate-x-full"

@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
 import { usePathname } from "next/navigation";
-import { ClockIcon, LocationIcon, PhoneIcon } from "../../assets/svgs";
-import SectionHeader from "../../components/SectionHeader";
+import { ClockIcon, LocationIcon, PhoneIcon } from "../../../assets/svgs";
+import SectionHeader from "../../../components/SectionHeader";
 
 function Contact() {
   const ViewSection = [

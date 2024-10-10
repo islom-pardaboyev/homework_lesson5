@@ -9,7 +9,7 @@ function SectionHeader({currentPage}) {
     <div className="h-[344px] relative">
         <Image src={ShopBg} alt="Shop_background" className="w-screen" />
         <div className="absolute top-1/2 left-1/2 flex flex-col -translate-x-1/2 -translate-y-1/2">
-        <Image className="mx-auto" src={MeubelHouseLogo}/>
+        <Image className="mx-auto" src={MeubelHouseLogo} alt='img'/>
           <h1 className="capitalize font-medium text-black text-5xl leading-[72px]">
           {currentPage.split("/").filter((item) => item)}
           </h1>

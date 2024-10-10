@@ -3,9 +3,9 @@ import { Rate } from "antd";
 import axios from "axios";
 import Zoom from "react-medium-image-zoom";
 import React, { useContext, useEffect, useState } from "react";
-import { Context } from "../../context/MainContext";
+import { Context } from "../../../context/MainContext";
 import { toast } from "react-toastify";
-import Button from "../../components/Button";
+import Button from "../../../components/Button";
 
 function About({ params }) {
   const [singleData, setSingleData] = useState([]);

@@ -1,5 +1,6 @@
 'use client'
 import axios from 'axios';
+import { useTranslations } from 'next-intl';
 import React, { useEffect, useState } from 'react'
 
 function Browse() {
@@ -9,9 +10,10 @@ function Browse() {
       setBrowseData(res.data.products)
     );
   }, []);
+  const t = useTranslations("IndexPage");
   return (
     <section className="my-[58px] text-center">
-        <h1 className="heading text-3xl font-bold">Browse The Range</h1>
+        <h1 className="heading text-3xl font-bold">{t('browse.title')}</h1>
         <p className="text-gray_600 mt-4">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </p>

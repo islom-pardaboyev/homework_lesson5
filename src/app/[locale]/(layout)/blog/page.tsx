@@ -2,9 +2,9 @@
 import React from "react";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import BlogImgOne from "../../assets/blog-img-1.png";
-import { CalendarIcon, PersonIcon, SearchIcon, TagIcon } from "../../assets/svgs";
-import SectionHeader from "../../components/SectionHeader";
+import BlogImgOne from "../../../assets/blog-img-1.png";
+import { CalendarIcon, PersonIcon, SearchIcon, TagIcon } from "../../../assets/svgs";
+import SectionHeader from "../../../components/SectionHeader";
 
 function Blog() {
   const currentPage = usePathname();
@@ -15,7 +15,7 @@ function Blog() {
         <div className="grid grid-cols-12">
           <div className="col-span-8 flex flex-col gap-[54px]">
             <div>
-              <Image src={BlogImgOne} />
+              <Image src={BlogImgOne} alt="img" />
               <div className="flex items-center mt-[17px] gap-[35px] text-gray ">
                 <p className="flex items-center gap-[11px]">
                   <PersonIcon />
@@ -50,7 +50,7 @@ function Blog() {
               </button>
             </div>
             <div>
-              <Image src={BlogImgOne} />
+              <Image src={BlogImgOne} alt="img"/>
               <div className="flex items-center mt-[17px] gap-[35px] text-gray ">
                 <p className="flex items-center gap-[11px]">
                   <PersonIcon />
@@ -85,7 +85,7 @@ function Blog() {
               </button>
             </div>
             <div>
-              <Image src={BlogImgOne} />
+              <Image src={BlogImgOne} alt="img" />
               <div className="flex items-center mt-[17px] gap-[35px] text-gray ">
                 <p className="flex items-center gap-[11px]">
                   <PersonIcon />

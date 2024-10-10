@@ -22,3 +22,7 @@ body {
 .ant-rate-star-zero .anticon-star svg{
   @apply !hidden
 }
+
+.nav__link{
+  @apply font-semibold
+}

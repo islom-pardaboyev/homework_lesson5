@@ -1,0 +1,46 @@
+{
+  "IndexPage": {
+    "header": {
+        "home": "Home",
+        "shop": "Shop",
+        "blog": "Blog",
+        "contact": "Contact"
+    },
+    "home": {
+      "title": "New Arrival",
+      "heading": "Discover Our New Collection",
+      "button_text": "Buy Now"
+    },
+    "browse": {
+      "title": "Browse The Range"
+    },
+    "our_products": {
+      "title": "Our Products",
+      "button_text": "see more",
+      "show_more_button_text": "Show More",
+      "show_less_button_text": "Show Less"
+    },
+    "footer": {
+        "about_text": "400 University Drive Suite 200 Coral Gables, FL 33134 USA",
+        "links": {
+            "title": "Links",
+            "home": "home",
+            "shop": "shop",
+            "blog": "blog",
+            "contact": "contact"
+        },
+        "help": {
+            "title": "help",
+            "payment_options": "payment options",
+            "returns": "returns",
+            "privacy_policies": "privacy_policies"
+        },
+        "newsletter": {
+            "title":"newsletter",
+            "input_placeholder": "enter your email",
+            "button_text": "subscribe",
+            "copyright": "2023 furino. All rights reverved"
+        }
+    }
+  }
+}

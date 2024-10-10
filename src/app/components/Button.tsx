@@ -1,6 +1,12 @@
 import React from 'react'
 
-function Button({title, styles, onClickEvent}) {
+type Props = {
+  title: string,
+  styles:string,
+  onClickEvent?: () => void
+}
+
+function Button({title, styles, onClickEvent}: Props) {
   return (
     <button onClick={onClickEvent} className={styles}>{title}</button>
   )
